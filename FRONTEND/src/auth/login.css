@@ -1,0 +1,115 @@
+/* Body background: sexy gradient + blur effect */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #2c3e50, #4ca1af);
+  /* background-size: 400% 400%; */
+  animation: gradientMove 8s ease infinite;
+  backdrop-filter: blur(6px);
+}
+
+/* Animate the background */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Login Form Card */
+.login-form {
+  background: rgba(255, 255, 255, 0.018);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(10px);
+  width: 350px;
+  color: white;
+  position: relative;
+}
+
+/* Title */
+.login-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Input Wrapper */
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Input */
+.input-group input {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  color: #fff;
+  transition: border-color 0.3s;
+}
+
+/* Label */
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* Animate label when input is filled or focused */
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -12px;
+  left: 5px;
+  font-size: 12px;
+  color: #00e0ff;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #00e0ff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #00b5d5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 224, 255, 0.4);
+}
+.already-account {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.login-link {
+  color: #00e0ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #00b5d5;
+  text-decoration: underline;
+}
