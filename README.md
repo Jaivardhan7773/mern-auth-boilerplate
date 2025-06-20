@@ -1,43 +1,19 @@
-# MERN Auth Boilerplate – JWT Cookie Auth with Profile Setup
+ ## 📦 Installation
 
-This is a full-stack boilerplate project built using the MERN stack with Zustand for state management and JWT cookie-based authentication. It includes essential features like:
-
-User Sign-up & Login
-
-Secure JWT-based session management using HTTP-only cookies
-
-Protected routes (Home/Profile)
-
-User profile management with Cloudinary image upload
-
-Navbar navigation
-
-Minimal frontend design with extendable structure
-
-This project was crafted with scalability and security in mind, offering a clean and extendable starting point for full-stack developers. Built with care and precision by Jaivardhan Singh ( https://github.com/Jaivardhan7773 ), it's a great launchpad for your next MERN project.
-
-
-
-
-## Installation
-
+To scaffold a new MERN Auth project, run:
 ```bash
-#frontend setup : 
 
-cd FRONTEND
-npm install
-npm run dev
-
-
-#backend setup :
-
-cd SERVER
-npm install
-npm run dev
-
-
+npx mern-auth-boilerplate
 
 ```
+# 🧱 MERN Auth Boilerplate CLI
+
+A simple and powerful CLI tool to scaffold a fully functional **MERN Stack Authentication** boilerplate. Includes **JWT**, **Zustand**, and modern best practices for fullstack apps.
+
+---
+
+## 🚀 Quick Start
+
 
 ## Usage/Examples
 
@@ -65,29 +41,6 @@ Once authenticated, you can access:
 🔐 Trying to access these routes without authentication will auto-redirect you to /signup
 ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your Backend .env file
-
-
-
-`PORT`=5000
-
-`MONGO_URI`
-
-`JWT_SECRET`
-
-`NODE_ENV`=development
-
-`CLOUDINARY_CLOUD_NAME`
-
-`CLOUDINARY_API_KEY`
-
-`CLOUDINARY_API_SECRET`
 
 ## 🚀 Tech Stack
 
